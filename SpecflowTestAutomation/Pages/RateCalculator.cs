@@ -32,17 +32,20 @@ namespace SpecflowTestAutomation.Pages
 
         public void InputNGNCurrency(string NGNCurrency)
         {
+             Thread.Sleep(2000);
             _driver.ClearAndSendKeys(ngnField, NGNCurrency);
             _driver.SendKeys(ngnField, Keys.Tab);
         }
 
         public string ReturnNGNCurrency()
         {
+            Thread.Sleep(1000);
             return _driver.FindElement(ngnField).GetAttribute("value");
         }
 
         public string ReturnGBPCurrency()
         {
+            Thread.Sleep(1000);
             return _driver.FindElement(gbpField).GetAttribute("value");
         }
     }   

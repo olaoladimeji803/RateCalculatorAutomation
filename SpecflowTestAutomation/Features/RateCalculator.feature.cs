@@ -74,13 +74,13 @@ namespace SpecflowTestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify Pounds To Naira Conversion is successful")]
+        [NUnit.Framework.DescriptionAttribute("01_Verify Pounds To Naira Conversion is successful")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void VerifyPoundsToNairaConversionIsSuccessful()
+        public virtual void _01_VerifyPoundsToNairaConversionIsSuccessful()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Pounds To Naira Conversion is successful", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01_Verify Pounds To Naira Conversion is successful", null, new string[] {
                         "tag1"});
 #line 4
 this.ScenarioInitialize(scenarioInfo);
@@ -110,6 +110,45 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 7
  testRunner.Then("a user sees 88000.00 value in NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("02_Verify Naira To Pounds Conversion is successful")]
+        public virtual void _02_VerifyNairaToPoundsConversionIsSuccessful()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02_Verify Naira To Pounds Conversion is successful", null, ((string[])(null)));
+#line 9
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 10
+ testRunner.Given("that a user load the rate calulation application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 11
+ testRunner.When("a user input 88000 into NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+ testRunner.Then("a user sees 44.00 value in GBP text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

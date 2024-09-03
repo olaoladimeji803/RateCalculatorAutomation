@@ -31,5 +31,19 @@ namespace SpecflowTestAutomation.StepsDefinition
             var actualNGNCurrency = Double.Parse(_rateCalculator.ReturnNGNCurrency());
             Assert.That(expectedNGNCurrency, Is.EqualTo(actualNGNCurrency));
         }
+
+        [When(@"a user input (.*) into NGN text field")]
+        public void WhenAUserInputIntoNGNTextField(string NGNCurrency)
+        {
+            _rateCalculator.InputNGNCurrency(NGNCurrency);
+        }
+
+        [Then(@"a user sees (.*) value in GBP text field")]
+        public void ThenAUserSeesValueInGBPTextField(Double expectedGBPCurrency)
+        {
+            var actualGBPCurrency = Double.Parse(_rateCalculator.ReturnGBPCurrency());
+            Assert.That(expectedGBPCurrency, Is.EqualTo(actualGBPCurrency));
+        }
+
     }
 }
