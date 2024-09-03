@@ -122,7 +122,11 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02_Verify Naira To Pounds Conversion is successful", null, ((string[])(null)));
 #line 9
+<<<<<<< HEAD
 this.ScenarioInitialize(scenarioInfo);
+=======
+ this.ScenarioInitialize(scenarioInfo);
+>>>>>>> ef33d44c493ea85dd94dd030980d29b35154be51
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -153,6 +157,7 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+<<<<<<< HEAD
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("03_Verify Invalid Pounds To Naira Conversion is unsuccessful")]
@@ -213,6 +218,8 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+=======
+>>>>>>> ef33d44c493ea85dd94dd030980d29b35154be51
     }
 }
 #pragma warning restore
