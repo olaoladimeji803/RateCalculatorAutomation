@@ -25,6 +25,8 @@ namespace SpecflowTestAutomation.StepsDefinition
         static ExtentReports report;
         ScenarioContext _scenarioContext;
         RateCalculatorEndpoints _rateCalculatorEndpoints;
+
+       
         public CommonStepDefinitions(Context context, ScenarioContext scenarioContext, RateCalculatorEndpoints rateCalculatorEndpoints) 
         {
             _context = context;
@@ -42,7 +44,7 @@ namespace SpecflowTestAutomation.StepsDefinition
             {
                 {"rate", rateCalculator.rate },
                 {"fromCurrency", rateCalculator.fromCurrency }, 
-                {"toCurreny", rateCalculator.toCurrency },
+                {"toCurreny", rateCalculator.toCurrency } 
             };
             string jsonString = JsonConvert.SerializeObject(data, Formatting.Indented);
 
@@ -51,11 +53,13 @@ namespace SpecflowTestAutomation.StepsDefinition
             scenario = feature.CreateNode<Scenario>(_scenarioContext.ScenarioInfo.Title);
         }
 
+      
         [Given(@"that a user load the rate calulation application")]
         public void GivenThatAUserLoadTheRateCalulationApplication()
         {
             _context.LoadRateCalculatorApplication();
         }
+
 
         [BeforeTestRun]
         public static void ReportGenerator()

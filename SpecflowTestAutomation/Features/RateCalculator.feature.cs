@@ -185,7 +185,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "fromCurrency",
                             "toCurrency"});
                 table1.AddRow(new string[] {
-                            "2000",
+                            "2100",
                             "gbp",
                             "ngn"});
 #line 16
@@ -195,10 +195,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("that a user load the rate calulation application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 20
- testRunner.When("a user input 42 into GBP text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("a user input 5 into GBP text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 21
- testRunner.Then("a user sees 84000.00 value in NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("a user sees 10500.00 value in NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 22
  testRunner.When("a user clicks on Send Now button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
