@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonSpecflowWithConsoleApp", "NonSpecflowWithConsoleApp\NonSpecflowWithConsoleApp.csproj", "{BBEECD21-F275-4276-92A9-F4ADC4DC3254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonSpecflowWithConsoleApp", "NonSpecflowWithConsoleApp\NonSpecflowWithConsoleApp.csproj", "{BBEECD21-F275-4276-92A9-F4ADC4DC3254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonSpecflowWithNunitTemplate", "NonSpecflowWithNunitTemplate\NonSpecflowWithNunitTemplate.csproj", "{819E2665-76C0-4D4E-B1F3-617B3FB74227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonSpecflowWithNunitTemplate", "NonSpecflowWithNunitTemplate\NonSpecflowWithNunitTemplate.csproj", "{819E2665-76C0-4D4E-B1F3-617B3FB74227}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecflowTestAutomation", "SpecflowTestAutomation\SpecflowTestAutomation.csproj", "{2AEB5228-D1CA-4DFE-A55E-DCBDCF6D76A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpecflowTestAutomation", "SpecflowTestAutomation\SpecflowTestAutomation.csproj", "{2AEB5228-D1CA-4DFE-A55E-DCBDCF6D76A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITaskManagementAutomation", "APITaskManagementAutomation\APITaskManagementAutomation.csproj", "{024AD8F6-F2BB-4011-BC1C-1A3FBB74939B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2AEB5228-D1CA-4DFE-A55E-DCBDCF6D76A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AEB5228-D1CA-4DFE-A55E-DCBDCF6D76A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AEB5228-D1CA-4DFE-A55E-DCBDCF6D76A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024AD8F6-F2BB-4011-BC1C-1A3FBB74939B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024AD8F6-F2BB-4011-BC1C-1A3FBB74939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024AD8F6-F2BB-4011-BC1C-1A3FBB74939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024AD8F6-F2BB-4011-BC1C-1A3FBB74939B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
