@@ -207,7 +207,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("a user selects Union Bank as the bank option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 24
- testRunner.And("a user inputs 1234567891 as the account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("a user inputs 1234567891 as the account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 25
  testRunner.And("a user clicks on Send button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
