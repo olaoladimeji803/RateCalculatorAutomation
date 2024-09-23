@@ -8,5 +8,6 @@
 
 		<!-- <Parameter name="browser" value="firefox" /> -->
 		<!-- <Parameter name="ie" value="firefox" /> -->
+		<!--<Parameter name="ie" value="" />--> 
 	</TestRunParameters>
 </RunSettings>
