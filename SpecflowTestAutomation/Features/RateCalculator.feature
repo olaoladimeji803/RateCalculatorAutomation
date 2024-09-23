@@ -15,10 +15,10 @@ Scenario: 02_Verify Naira To Pounds Conversion is successful
 Scenario: 03_Verify Naira To Pounds Conversion is successful
     Given that exchange rate for rate calculator is set as shown below
 	| rate | fromCurrency | toCurrency |
-	| 2000 | gbp          | ngn        |
+	| 2100 | gbp          | ngn        |
 	And that a user load the rate calulation application 
-	When a user input 42 into GBP text field
-	Then a user sees 84000.00 value in NGN text field
+	When a user input 5 into GBP text field
+	Then a user sees 10500.00 value in NGN text field
 	When a user clicks on Send Now button
 	And a user selects Union Bank as the bank option
 	 And a user inputs 1234567891 as the account number

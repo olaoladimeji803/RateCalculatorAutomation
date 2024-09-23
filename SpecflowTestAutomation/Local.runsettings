@@ -3,8 +3,8 @@
 	<TestRunParameters>
 		<Parameter name="baseUrl" value="https://main--exchange-rate-calculator-2024.netlify.app/" />
 	    <Parameter name="browser" value="chrome" />
-		<!--	 <Parameter name="setRateBaseUrl" value="https://rate-calculator-1-0.onrender.com/api/Rate/set-rate" /> -->
-		<Parameter name="setRateBaseUrl" value="https://rate-calculator-1-0.onrender.com/swagger/index.html" /> 
+	    <Parameter name="setRateBaseUrl" value="https://rate-calculator-1-0.onrender.com/api/Rate/set-rate" /> 
+		<!-- <Parameter name="setRateBaseUrl" value="https://rate-calculator-1-0.onrender.com/swagger/index.html" /> -->
 
 		<!-- <Parameter name="browser" value="firefox" /> -->
 		<!-- <Parameter name="ie" value="firefox" /> -->
