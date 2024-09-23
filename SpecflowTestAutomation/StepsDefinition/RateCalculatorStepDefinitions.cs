@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using AventStack.ExtentReports.Gherkin.Model;
+using NUnit.Framework;
 using SpecflowTestAutomation.Pages;
 using SpecflowTestAutomation.SetUp;
 using System;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
+using SpecflowTestAutomation.EndPoints;
 
 namespace SpecflowTestAutomation.StepsDefinition
 {
@@ -14,6 +17,7 @@ namespace SpecflowTestAutomation.StepsDefinition
     internal class RateCalculatorStepDefinitions
     {
         RateCalculator _rateCalculator;
+        
         public RateCalculatorStepDefinitions(RateCalculator rateCalculator)
         {
             _rateCalculator = rateCalculator;
@@ -45,5 +49,39 @@ namespace SpecflowTestAutomation.StepsDefinition
             Assert.That(expectedGBPCurrency, Is.EqualTo(actualGBPCurrency));
         }
 
+        [When(@"a user clicks on Send Now button")]
+        public void WhenAUserClicksOnSendNowButton()
+        {
+           _rateCalculator.ClicksOnSendNowButton();
+        }
+
+        [When(@"a user selects (.*) as the bank option")]
+        public void WhenAUserSelectsUnionBankAsTheBankOption(string bankName)
+        {
+           _rateCalculator.SelectsBankOption(bankName);
+        }
+
+        [When(@"a user inputs (.*) as the account number")]
+        public void WhenAUserInputsAsTheAccountNumber(string accountNumber)
+        {
+            _rateCalculator.InputsAccountNumber(accountNumber);
+        }
+
+        [When(@"a user clicks on Send button")]
+        public void WhenAUserClicksOnSendButton()
+        {
+            _rateCalculator.ClicksOnSendButton();
+        }
+
+        [Then(@"the text (.*) message should appear")]
+        public void ThenTheTextTransactionSuccessfulMessageShouldAppear(string expectedSuccessMessage)
+        {
+            Assert.That(expectedSuccessMessage.Equals(_rateCalculator.TransactionSuccessfulMessage()));
+           
+            // Option 1
+            // string actualResult = _rateCalculator.ReturnSuccessMessage(expectedResult);
+            // Assert.That(expectedSuccessMessage.Equals(actualResult), $"Expected message {expectedSuccessMessage} is not equal to actual message {actualResult}");
+            ////Option 2
+        }
     }
 }

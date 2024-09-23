@@ -121,12 +121,8 @@ this.ScenarioInitialize(scenarioInfo);
         {
             string[] tagsOfScenario = ((string[])(null));
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02_Verify Naira To Pounds Conversion is successful", null, ((string[])(null)));
-#line 9
-<<<<<<< HEAD
+#line 10
 this.ScenarioInitialize(scenarioInfo);
-=======
- this.ScenarioInitialize(scenarioInfo);
->>>>>>> ef33d44c493ea85dd94dd030980d29b35154be51
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -145,27 +141,26 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 10
+#line 11
  testRunner.Given("that a user load the rate calulation application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 11
+#line 12
  testRunner.When("a user input 88000 into NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 12
+#line 13
  testRunner.Then("a user sees 44.00 value in GBP text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
-<<<<<<< HEAD
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("03_Verify Invalid Pounds To Naira Conversion is unsuccessful")]
-        public virtual void _03_VerifyInvalidPoundsToNairaConversionIsUnsuccessful()
+        [NUnit.Framework.DescriptionAttribute("03_Verify Naira To Pounds Conversion is successful")]
+        public virtual void _03_VerifyNairaToPoundsConversionIsSuccessful()
         {
             string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03_Verify Invalid Pounds To Naira Conversion is unsuccessful", null, ((string[])(null)));
-#line 14
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03_Verify Naira To Pounds Conversion is successful", null, ((string[])(null)));
+#line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -185,17 +180,52 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04_Verify Invalid Naira To Pounds Conversion is unsuccessful")]
-        public virtual void _04_VerifyInvalidNairaToPoundsConversionIsUnsuccessful()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04_Verify Invalid Naira To Pounds Conversion is unsuccessful", null, ((string[])(null)));
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "rate",
+                            "fromCurrency",
+                            "toCurrency"});
+                table1.AddRow(new string[] {
+                            "2000",
+                            "gbp",
+                            "ngn"});
 #line 16
+    testRunner.Given("that exchange rate for rate calculator is set as shown below", ((string)(null)), table1, "Given ");
+#line hidden
+#line 19
+ testRunner.And("that a user load the rate calulation application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+ testRunner.When("a user input 42 into GBP text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 21
+ testRunner.Then("a user sees 84000.00 value in NGN text field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 22
+ testRunner.When("a user clicks on Send Now button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 23
+ testRunner.And("a user selects Union Bank as the bank option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
+ testRunner.And("a user inputs 1234567891 as the account number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 25
+ testRunner.And("a user clicks on Send button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 26
+ testRunner.Then("the text Transaction successful! message should appear", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("04_Verify Invalid Pounds To Naira Conversion is unsuccessful")]
+        public virtual void _04_VerifyInvalidPoundsToNairaConversionIsUnsuccessful()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04_Verify Invalid Pounds To Naira Conversion is unsuccessful", null, ((string[])(null)));
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -218,8 +248,36 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
-=======
->>>>>>> ef33d44c493ea85dd94dd030980d29b35154be51
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("05_Verify Invalid Naira To Pounds Conversion is unsuccessful")]
+        public virtual void _05_VerifyInvalidNairaToPoundsConversionIsUnsuccessful()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05_Verify Invalid Naira To Pounds Conversion is unsuccessful", null, ((string[])(null)));
+#line 30
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore
