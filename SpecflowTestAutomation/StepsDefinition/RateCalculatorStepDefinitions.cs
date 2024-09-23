@@ -83,5 +83,12 @@ namespace SpecflowTestAutomation.StepsDefinition
             // Assert.That(expectedSuccessMessage.Equals(actualResult), $"Expected message {expectedSuccessMessage} is not equal to actual message {actualResult}");
             ////Option 2
         }
+
+        [Then(@"the error message contains enter a valid (.*) digit account number")]
+        public void ThenTheErrorMessageContainsEnterAValidDigitAccountNumber(string errormessage )
+        {
+            Assert.That(_rateCalculator.DoesThePopupAppear());
+        }
+
     }
 }

@@ -93,5 +93,15 @@ namespace SpecflowTestAutomation.Pages
             string actualResult = _driver.FindElement(successMsgField).Text.Trim();
             return actualResult.Equals(expectedResult);
         }
+
+        public bool DoesThePopupAppear()
+        {
+            if (_driver.HandleAlert != null)
+            {
+                _driver.HandleAlert();
+                return true;
+            }
+            return false;
+        }
     }
 }

@@ -25,6 +25,20 @@ Scenario: 03_Verify Naira To Pounds Conversion is successful
 	And a user clicks on Send button
 	Then the text Transaction successful! message should appear
 
+	Scenario: 04_Verify Naira To Pounds Conversion is successful
+    Given that exchange rate for rate calculator is set as shown below
+	| rate | fromCurrency | toCurrency |
+	| 2200 | gbp          | ngn        |
+	And that a user load the rate calulation application 
+	When a user input 5 into GBP text field
+	Then a user sees 10500.00 value in NGN text field
+	When a user clicks on Send Now button
+	And a user selects Union Bank as the bank option
+	And a user inputs 1234567891 as the account number
+	And a user clicks on Send button
+	Then the error message contains enter a valid 10 digit account number
+	
+
 Scenario: 04_Verify Invalid Pounds To Naira Conversion is unsuccessful
 
 Scenario: 05_Verify Invalid Naira To Pounds Conversion is unsuccessful
